@@ -2,25 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
   
   <title>Git-Collab TOTP</title>
   <link rel="stylesheet" href="css/bulma-0.7.1.min.css">
-  
-  <!--<style>
-    @media screen and (min-width: 1068px) {
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    <!--@media screen and (min-width: 1068px) {
       .container {
         max-width: 600px;
         width: 600px;
       }
-    }
-  </style>-->
+    }-->
+  </style>
+  <style type="text/css">
+  html {
+    overflow-y: hidden;
+  }
+</style>
 </head>
-<body style="background-image: url('img/hero-bg.jpg');">
+<body>
 
   <section id="app" class="section">
 
@@ -50,14 +54,16 @@
       </div>-->
 
       <div class="content">
-        <span class="has-text-grey is-size-7">Updating in {{ updatingIn }} seconds</span>
+        <span class="has-text-grey is-size-7">{{ updatingIn }} s  </span>
         <!--<progress class="progress is-info is-small" v-bind:value="period - updatingIn" :max="period"></progress>-->
       </div>
 
       <div class="box">
-        <p class="title is-size-1 has-text-centered" id="myInput">{{ token }}</p>
+        <p class="title is-size-1 has-text-centered">{{ token }}</p>
       </div>
+
     </div>
+
   </section>
 
   <script src="js/vue-2.4.0.min.js"></script>
