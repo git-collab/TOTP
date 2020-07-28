@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicons -->
+  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
   
   <title>Git-Collab TOTP</title>
-  <link rel="stylesheet" href="css/bulma-0.7.1.min.css">
+  <link rel="stylesheet" href="css/bulma-0.9.0.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    <!--@media screen and (min-width: 1068px) {
+    @media screen and (min-width: 1068px) {
       .container {
         max-width: 600px;
         width: 600px;
       }
-    }-->
+    }
   </style>
   <style type="text/css">
   html {
     overflow-y: hidden;
   }
 </style>
+
 </head>
 <body>
 
@@ -54,24 +55,29 @@
       </div>-->
 
       <div class="content">
-        <span class="has-text-grey is-size-7">{{ updatingIn }} s  </span>
+        <span class="has-text-grey is-size-7">{{ updatingIn }} S</span>
         <!--<progress class="progress is-info is-small" v-bind:value="period - updatingIn" :max="period"></progress>-->
       </div>
 
       <div class="box">
-        <p class="title is-size-1 has-text-centered">{{ token }}</p>
+        <p class="title is-size-1 has-text-centered" id="token">{{ token }}</p>
+      </div>
+
+      <div class="control is-clearfix">
+        <a class="button is-large is-light is-pulled-right" id="clipboard-button" data-clipboard-target="#token" title="Copy token to clipboard">
+          <img src="img/clippy.svg" height="36" width="36">
+        </a>
       </div>
 
     </div>
-        <p>
-          Built by <a href="https://dan.hersam.com">Dan Hersam</a>. Source on <a href="https://github.com/jaden/totp-generator">Github</a>.
-        </p>
 
   </section>
 
+
   <script src="js/vue-2.4.0.min.js"></script>
   <script src="js/otpauth-3.1.3.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/clipboard-2.0.6.min.js"></script>
+  <script src="js/app.js?v=1.0"></script>
 
 </body>
 </html>
