@@ -19,5 +19,5 @@ https://git-collab.github.io/totp/?key=KEY
 You can also provide the digits and token period using a query string in the URL, for example: `https://totp.danhersam.com/?period=60&digits=6&key=KEY`
 <br><br>
 ```
-https://totp.danhersam.com/?period=60&digits=6&key=KEY
+https://git-collab.github.io/totp/?period=60&digits=6&key=KEY
 ```
