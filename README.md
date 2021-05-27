@@ -9,10 +9,10 @@ TOTP
 You can provide the key in the URL using the URI fragment or a query parameter, for example: `https://totp.danhersam.com/#/KEY` or `https://totp.danhersam.com?key=KEY`
 <br><br>
 ```
-https://totp.danhersam.com/#/KEY
+https://git-collab.github.io/totp/#/KEY
 ```
 ```
-https://totp.danhersam.com?key=KEY
+https://git-collab.github.io/totp/?key=KEY
 ```
 <br><br>
 ### Digits and period
